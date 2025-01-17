@@ -1,0 +1,102 @@
+.Beneficios {
+  min-height: 100vh;
+  padding: 5vw 0;
+  background-color: #111111;
+  position: relative;
+  z-index: 2;
+}
+
+.beneficios-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.Beneficios p {
+  text-align: center;
+  margin-bottom: 0.5vw;
+  font-size: 1.2vw;
+  color: $color-white;
+}
+
+.brands-container {
+  width: 100%;
+  margin: 3vw 0;
+  padding: 1vw 0;
+  border-radius: 3vw;
+  overflow: hidden;
+  background-color: $color-variation;
+  background-color: #222222;
+}
+
+.brands-wrapper {
+  width: 360%;
+  margin-left: -260%;
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation-name: logosAnimation;
+  animation-duration: 50s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  will-change: margin;
+}
+
+.brands-logo-container {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brands-logo-image {
+  &__osde {
+    width: 50%;
+  }
+  &__ase {
+    width: 60%;
+  }
+  &__swiss {
+    width: 80%;
+  }
+  &__medife {
+    width: 60%;
+  }
+  &__sport {
+    width: 50%;
+  }
+  &__shell {
+    width: 50%;
+  }
+  &__nacion {
+    width: 60%;
+  }
+  &__brubank {
+    width: 60%;
+  }
+  &__siglo {
+    width: 90%;
+  }
+  &__amigos {
+    width: 60%;
+  }
+  &__usal {
+    width: 60%;
+  }
+  &__paseo {
+    width: 100%;
+  }
+  &__ankura {
+    width: 60%;
+  }
+}
+
+@keyframes logosAnimation {
+  0% {
+    margin-left: 0%;
+  }
+  100% {
+    margin-left: -260%;
+  }
+}

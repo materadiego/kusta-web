@@ -1,0 +1,54 @@
+.Academia {
+  height: 100vh;
+  background-color: #000000;
+
+  position: relative;
+  z-index: 2;
+}
+
+.academia-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.academia-subtitle,
+.academia-subtitle2,
+.academia-box-text {
+  margin: 0 auto;
+  text-align: center;
+  color: $color-white;
+}
+
+.academia-subtitle {
+  width: 85%;
+  margin-bottom: 0.5vw;
+  font-size: 1.2vw;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.academia-box {
+  width: 30%;
+  margin: 3vw 0;
+  border-radius: 8px;
+  padding: 2vw;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.academia-box-title {
+  font-size: 1.5vw;
+  font-weight: 600;
+  margin-bottom: 1vw;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-variation;
+}
+
+.academia-box-text {
+}

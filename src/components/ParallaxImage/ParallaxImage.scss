@@ -1,0 +1,17 @@
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.parallax-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 300%;
+  background-size: 120%;
+  background-position: center 70%; /* Comienza mostrando la parte inferior */
+  background-repeat: no-repeat;
+  will-change: transform;
+}

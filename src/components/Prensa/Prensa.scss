@@ -1,0 +1,13 @@
+.Prensa {
+  background-color: $color-primary;
+  position: relative;
+  padding: 5vw 0;
+  min-height: 100vw;
+  z-index: 2;
+}
+
+.Prensa p {
+  text-align: center;
+  font-size: 1.2vw;
+  color: $color-white;
+}

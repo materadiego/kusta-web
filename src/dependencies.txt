@@ -1,0 +1,35 @@
+// Sass:
+
+npm install --save-dev css-loader
+
+npm install --save-dev style-loader
+
+// React Router
+
+npm i react-router-dom
+
+// Hero icons
+
+npm install @heroicons/react
+
+
+chat
+1137044476
+
+Martina Ipuche
+41168584
+
+Deborah Cascallana
+24371700
+
+Hada Nadur
+43666954
+
+Mariano 
+32792362
+
+Ramiro Herrera
+dni: 41332823
+
+Camila inda
+dni: 42906337

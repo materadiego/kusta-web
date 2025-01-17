@@ -1,0 +1,17 @@
+.LayoutContainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vw 0;
+  position: relative;
+  z-index: 3;
+}
+
+.LayoutContainer--wrapper {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

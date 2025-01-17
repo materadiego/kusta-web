@@ -1,0 +1,31 @@
+.ContactButton {
+  position: fixed;
+  z-index: 3;
+  width: 13vw;
+  height: 13vw;
+  bottom: 10vw;
+  right: 5vw;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-variation;
+  & img {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 1099px) {
+  .ContactButton {
+    width: 4vw;
+    height: 4vw;
+    bottom: 3vw;
+    right: 3vw;
+    cursor: pointer;
+    transition: 0.3s;
+    will-change: background-color;
+    &:hover {
+      background-color: #444444;
+    }
+  }
+}
