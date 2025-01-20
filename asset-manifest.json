@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kusta-web/static/css/main.22778820.css",
+    "main.css": "/kusta-web/static/css/main.2d8c060d.css",
     "main.js": "/kusta-web/static/js/main.8b83e59c.js",
     "static/js/453.f1bc1648.chunk.js": "/kusta-web/static/js/453.f1bc1648.chunk.js",
     "static/media/services-bg6.jpg": "/kusta-web/static/media/services-bg6.96120200c734151b503a.jpg",
@@ -44,12 +44,12 @@
     "static/media/media-fb.svg": "/kusta-web/static/media/media-fb.7bef6ec3fa3504cc57e922e9167b6df3.svg",
     "static/media/location-icon.svg": "/kusta-web/static/media/location-icon.8616fd08091d107c17c7e263cd4547f7.svg",
     "static/media/arrow-icon.svg": "/kusta-web/static/media/arrow-icon.8f8e7ddc0adcab9b85523e694e3b4de5.svg",
-    "main.22778820.css.map": "/kusta-web/static/css/main.22778820.css.map",
+    "main.2d8c060d.css.map": "/kusta-web/static/css/main.2d8c060d.css.map",
     "main.8b83e59c.js.map": "/kusta-web/static/js/main.8b83e59c.js.map",
     "453.f1bc1648.chunk.js.map": "/kusta-web/static/js/453.f1bc1648.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.22778820.css",
+    "static/css/main.2d8c060d.css",
     "static/js/main.8b83e59c.js"
   ]
 }
