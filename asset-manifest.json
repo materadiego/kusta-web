@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kusta-web/static/css/main.c562e4b5.css",
+    "main.css": "/kusta-web/static/css/main.248a4391.css",
     "main.js": "/kusta-web/static/js/main.782a842d.js",
     "static/js/453.f1bc1648.chunk.js": "/kusta-web/static/js/453.f1bc1648.chunk.js",
     "static/media/franquicias-bg3.jpg": "/kusta-web/static/media/franquicias-bg3.1d7259b38fedead28000.jpg",
@@ -12,8 +12,8 @@
     "static/media/services4.JPG": "/kusta-web/static/media/services4.f4300bd2e7100ad323a9.JPG",
     "static/media/beneficios-bg4.jpeg": "/kusta-web/static/media/beneficios-bg4.63c2b0cf007506f8f983.jpeg",
     "static/media/sucursales-bg-2.jpg": "/kusta-web/static/media/sucursales-bg-2.8ae90ad8545e255e4cf9.jpg",
-    "static/media/bg-benef1.jpg": "/kusta-web/static/media/bg-benef1.4a6551911089c950cead.jpg",
     "static/media/1.jpg": "/kusta-web/static/media/1.2c4aece93aed8847703a.jpg",
+    "static/media/bg-benef2.jpg": "/kusta-web/static/media/bg-benef2.84e14963d5df2ccbc610.jpg",
     "static/media/prensa3.jpeg": "/kusta-web/static/media/prensa3.b9a7a03b58f24dbb82e8.jpeg",
     "static/media/prensa4.jpeg": "/kusta-web/static/media/prensa4.516e3b304c860626710f.jpeg",
     "static/media/prensa1.jpeg": "/kusta-web/static/media/prensa1.acd5ddeb5a7ff3e3a629.jpeg",
@@ -43,12 +43,12 @@
     "static/media/media-fb.svg": "/kusta-web/static/media/media-fb.7bef6ec3fa3504cc57e922e9167b6df3.svg",
     "static/media/location-icon.svg": "/kusta-web/static/media/location-icon.8616fd08091d107c17c7e263cd4547f7.svg",
     "static/media/arrow-icon.svg": "/kusta-web/static/media/arrow-icon.8f8e7ddc0adcab9b85523e694e3b4de5.svg",
-    "main.c562e4b5.css.map": "/kusta-web/static/css/main.c562e4b5.css.map",
+    "main.248a4391.css.map": "/kusta-web/static/css/main.248a4391.css.map",
     "main.782a842d.js.map": "/kusta-web/static/js/main.782a842d.js.map",
     "453.f1bc1648.chunk.js.map": "/kusta-web/static/js/453.f1bc1648.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c562e4b5.css",
+    "static/css/main.248a4391.css",
     "static/js/main.782a842d.js"
   ]
 }
