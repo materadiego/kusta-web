@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kusta-web/static/css/main.248a4391.css",
-    "main.js": "/kusta-web/static/js/main.782a842d.js",
+    "main.css": "/kusta-web/static/css/main.b5582467.css",
+    "main.js": "/kusta-web/static/js/main.6d6de6a1.js",
     "static/js/453.f1bc1648.chunk.js": "/kusta-web/static/js/453.f1bc1648.chunk.js",
     "static/media/franquicias-bg3.jpg": "/kusta-web/static/media/franquicias-bg3.1d7259b38fedead28000.jpg",
     "static/media/services-bg6.jpg": "/kusta-web/static/media/services-bg6.96120200c734151b503a.jpg",
@@ -11,21 +11,29 @@
     "static/media/services3.JPG": "/kusta-web/static/media/services3.ff6b5cb38af59d35dcc3.JPG",
     "static/media/services4.JPG": "/kusta-web/static/media/services4.f4300bd2e7100ad323a9.JPG",
     "static/media/beneficios-bg4.jpeg": "/kusta-web/static/media/beneficios-bg4.63c2b0cf007506f8f983.jpeg",
+    "static/media/prensa-infobae.png": "/kusta-web/static/media/prensa-infobae.dc1744fb00cf24ec2073.png",
+    "static/media/prensa-puntobiz.png": "/kusta-web/static/media/prensa-puntobiz.9d8074001be77a8af9c2.png",
+    "static/media/prensa-marcela.png": "/kusta-web/static/media/prensa-marcela.0047f9cf5419cb87ff47.png",
+    "static/media/prensa-beautymarket.png": "/kusta-web/static/media/prensa-beautymarket.988c04155895d0a2bf63.png",
     "static/media/sucursales-bg-2.jpg": "/kusta-web/static/media/sucursales-bg-2.8ae90ad8545e255e4cf9.jpg",
     "static/media/1.jpg": "/kusta-web/static/media/1.2c4aece93aed8847703a.jpg",
     "static/media/bg-benef2.jpg": "/kusta-web/static/media/bg-benef2.84e14963d5df2ccbc610.jpg",
     "static/media/prensa3.jpeg": "/kusta-web/static/media/prensa3.b9a7a03b58f24dbb82e8.jpeg",
     "static/media/prensa4.jpeg": "/kusta-web/static/media/prensa4.516e3b304c860626710f.jpeg",
+    "static/media/prensa-impulso.png": "/kusta-web/static/media/prensa-impulso.8ed3f8f9f7652f507e9f.png",
     "static/media/prensa1.jpeg": "/kusta-web/static/media/prensa1.acd5ddeb5a7ff3e3a629.jpeg",
     "static/media/sucursales-bg-3.jpg": "/kusta-web/static/media/sucursales-bg-3.727d01e6585326d85ad7.jpg",
     "static/media/Poppins-Regular.ttf": "/kusta-web/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Poppins-Bold.ttf": "/kusta-web/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
     "static/media/prensa6.jpeg": "/kusta-web/static/media/prensa6.dec45e17ab51f54d4032.jpeg",
     "static/media/logo-cmc-blanco.png": "/kusta-web/static/media/logo-cmc-blanco.c3d28313290a61dcad9d.png",
+    "static/media/prensa-pancho.png": "/kusta-web/static/media/prensa-pancho.f01a9988a3f80f5397ef.png",
     "static/media/Merriweather-Bold.ttf": "/kusta-web/static/media/Merriweather-Bold.ae39f743fdcf8f64531e.ttf",
     "static/media/prensa5.jpeg": "/kusta-web/static/media/prensa5.427d5453e2d69695e385.jpeg",
     "static/media/prensa2.jpeg": "/kusta-web/static/media/prensa2.96a3fe9d2fa3b3f57adb.jpeg",
     "static/media/nosotros-bg.jpeg": "/kusta-web/static/media/nosotros-bg.4cba8695b549812b0614.jpeg",
+    "static/media/prensa-la-capital.png": "/kusta-web/static/media/prensa-la-capital.e08e23a8dc17ccc96f79.png",
+    "static/media/prensa-sinmordaza.png": "/kusta-web/static/media/prensa-sinmordaza.8a38e42bd881810e902e.png",
     "static/media/logo-shell.png": "/kusta-web/static/media/logo-shell.ad096efdc09ce07d32c5.png",
     "static/media/beneficios-bg.svg": "/kusta-web/static/media/beneficios-bg.aa341d7a5faeddc0afcd.svg",
     "static/media/logo-swiss.png": "/kusta-web/static/media/logo-swiss.a044442d60ecbd16db3f.png",
@@ -43,12 +51,12 @@
     "static/media/media-fb.svg": "/kusta-web/static/media/media-fb.7bef6ec3fa3504cc57e922e9167b6df3.svg",
     "static/media/location-icon.svg": "/kusta-web/static/media/location-icon.8616fd08091d107c17c7e263cd4547f7.svg",
     "static/media/arrow-icon.svg": "/kusta-web/static/media/arrow-icon.8f8e7ddc0adcab9b85523e694e3b4de5.svg",
-    "main.248a4391.css.map": "/kusta-web/static/css/main.248a4391.css.map",
-    "main.782a842d.js.map": "/kusta-web/static/js/main.782a842d.js.map",
+    "main.b5582467.css.map": "/kusta-web/static/css/main.b5582467.css.map",
+    "main.6d6de6a1.js.map": "/kusta-web/static/js/main.6d6de6a1.js.map",
     "453.f1bc1648.chunk.js.map": "/kusta-web/static/js/453.f1bc1648.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.248a4391.css",
-    "static/js/main.782a842d.js"
+    "static/css/main.b5582467.css",
+    "static/js/main.6d6de6a1.js"
   ]
 }
