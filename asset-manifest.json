@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kusta-web/static/css/main.eee11d3b.css",
-    "main.js": "/kusta-web/static/js/main.cdb9841f.js",
+    "main.css": "/kusta-web/static/css/main.cb8cbaab.css",
+    "main.js": "/kusta-web/static/js/main.b20dc300.js",
     "static/js/453.f1bc1648.chunk.js": "/kusta-web/static/js/453.f1bc1648.chunk.js",
     "static/media/franquicias-bg3.jpg": "/kusta-web/static/media/franquicias-bg3.1d7259b38fedead28000.jpg",
     "static/media/services-bg6.jpg": "/kusta-web/static/media/services-bg6.96120200c734151b503a.jpg",
@@ -40,6 +40,7 @@
     "static/media/logo-shell.png": "/kusta-web/static/media/logo-shell.ad096efdc09ce07d32c5.png",
     "static/media/beneficios-bg.svg": "/kusta-web/static/media/beneficios-bg.aa341d7a5faeddc0afcd.svg",
     "static/media/logo-swiss.png": "/kusta-web/static/media/logo-swiss.a044442d60ecbd16db3f.png",
+    "static/media/logo-wonoma.png": "/kusta-web/static/media/logo-wonoma.22240679118b768c7e9e.png",
     "static/media/logo-medife.png": "/kusta-web/static/media/logo-medife.6966c78c10c2863365cd.png",
     "static/media/Logo-KBT-blanco-png.png": "/kusta-web/static/media/Logo-KBT-blanco-png.c912a4b5b66a8154a1d1.png",
     "static/media/logo-nacion.png": "/kusta-web/static/media/logo-nacion.a560116359a131a1381c.png",
@@ -47,19 +48,22 @@
     "static/media/logo-sport.png": "/kusta-web/static/media/logo-sport.d60553395013a434a65f.png",
     "static/media/logo-osde.webp": "/kusta-web/static/media/logo-osde.770c35f37fbb36b1ed21.webp",
     "static/media/redes-wsp.svg": "/kusta-web/static/media/redes-wsp.7c11524cc1139fb49faedd637911dbcf.svg",
+    "static/media/icon-offer-gray.svg": "/kusta-web/static/media/icon-offer-gray.5acc90a5ad447a677fb1.svg",
     "static/media/media-ig.svg": "/kusta-web/static/media/media-ig.b9b83e56ed7dba8b0a503d3b4cbde6ca.svg",
+    "static/media/icon-clock-gray.svg": "/kusta-web/static/media/icon-clock-gray.8e3acbb12b687605cdc5.svg",
     "static/media/close-icon.svg": "/kusta-web/static/media/close-icon.3721b02ec61c1015e90388746e266d15.svg",
     "index.html": "/kusta-web/index.html",
     "static/media/media-in.svg": "/kusta-web/static/media/media-in.8632a33516f9d1129d03695d6513ee99.svg",
     "static/media/media-fb.svg": "/kusta-web/static/media/media-fb.7bef6ec3fa3504cc57e922e9167b6df3.svg",
+    "static/media/icon-check-gray.svg": "/kusta-web/static/media/icon-check-gray.14f24e1b4b2d824929d7.svg",
     "static/media/location-icon.svg": "/kusta-web/static/media/location-icon.8616fd08091d107c17c7e263cd4547f7.svg",
     "static/media/arrow-icon.svg": "/kusta-web/static/media/arrow-icon.8f8e7ddc0adcab9b85523e694e3b4de5.svg",
-    "main.eee11d3b.css.map": "/kusta-web/static/css/main.eee11d3b.css.map",
-    "main.cdb9841f.js.map": "/kusta-web/static/js/main.cdb9841f.js.map",
+    "main.cb8cbaab.css.map": "/kusta-web/static/css/main.cb8cbaab.css.map",
+    "main.b20dc300.js.map": "/kusta-web/static/js/main.b20dc300.js.map",
     "453.f1bc1648.chunk.js.map": "/kusta-web/static/js/453.f1bc1648.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eee11d3b.css",
-    "static/js/main.cdb9841f.js"
+    "static/css/main.cb8cbaab.css",
+    "static/js/main.b20dc300.js"
   ]
 }
