@@ -1,16 +1,14 @@
 {
   "files": {
-    "main.css": "/kusta-web/static/css/main.cb8cbaab.css",
-    "main.js": "/kusta-web/static/js/main.b20dc300.js",
+    "main.css": "/kusta-web/static/css/main.bf8808e5.css",
+    "main.js": "/kusta-web/static/js/main.63d7254f.js",
     "static/js/453.f1bc1648.chunk.js": "/kusta-web/static/js/453.f1bc1648.chunk.js",
     "static/media/franquicias-bg3.jpg": "/kusta-web/static/media/franquicias-bg3.1d7259b38fedead28000.jpg",
-    "static/media/services-bg6.jpg": "/kusta-web/static/media/services-bg6.96120200c734151b503a.jpg",
     "static/media/services2.jpg": "/kusta-web/static/media/services2.d6281cc8322f876785f9.jpg",
-    "static/media/wonoma5.jpg": "/kusta-web/static/media/wonoma5.172a8600869151c90bf2.jpg",
     "static/media/mariano2.jpg": "/kusta-web/static/media/mariano2.ca4640f5d6ec1dbdf12a.jpg",
-    "static/media/wonoma4.png": "/kusta-web/static/media/wonoma4.a911b94b546cca839971.png",
+    "static/media/wonoma-img.png": "/kusta-web/static/media/wonoma-img.4118574d976b37e0ae99.png",
     "static/media/services3.png": "/kusta-web/static/media/services3.38fa04580a2362745f0f.png",
-    "static/media/wonoma1.png": "/kusta-web/static/media/wonoma1.3cbf14f2040d64588bd6.png",
+    "static/media/wonoma-bg.png": "/kusta-web/static/media/wonoma-bg.bd247821bb6d84095b99.png",
     "static/media/services3.JPG": "/kusta-web/static/media/services3.ff6b5cb38af59d35dcc3.JPG",
     "static/media/services4.JPG": "/kusta-web/static/media/services4.f4300bd2e7100ad323a9.JPG",
     "static/media/beneficios-bg4.jpeg": "/kusta-web/static/media/beneficios-bg4.63c2b0cf007506f8f983.jpeg",
@@ -58,12 +56,12 @@
     "static/media/icon-check-gray.svg": "/kusta-web/static/media/icon-check-gray.14f24e1b4b2d824929d7.svg",
     "static/media/location-icon.svg": "/kusta-web/static/media/location-icon.8616fd08091d107c17c7e263cd4547f7.svg",
     "static/media/arrow-icon.svg": "/kusta-web/static/media/arrow-icon.8f8e7ddc0adcab9b85523e694e3b4de5.svg",
-    "main.cb8cbaab.css.map": "/kusta-web/static/css/main.cb8cbaab.css.map",
-    "main.b20dc300.js.map": "/kusta-web/static/js/main.b20dc300.js.map",
+    "main.bf8808e5.css.map": "/kusta-web/static/css/main.bf8808e5.css.map",
+    "main.63d7254f.js.map": "/kusta-web/static/js/main.63d7254f.js.map",
     "453.f1bc1648.chunk.js.map": "/kusta-web/static/js/453.f1bc1648.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb8cbaab.css",
-    "static/js/main.b20dc300.js"
+    "static/css/main.bf8808e5.css",
+    "static/js/main.63d7254f.js"
   ]
 }
