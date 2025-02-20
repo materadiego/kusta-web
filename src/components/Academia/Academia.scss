@@ -1,54 +1,123 @@
 .Academia {
-  height: 100vh;
-  background-color: #000000;
-
-  position: relative;
-  z-index: 2;
+  background-color: $color-secondary;
 }
 
-.academia-overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-.academia-subtitle,
-.academia-subtitle2,
-.academia-box-text {
-  margin: 0 auto;
-  text-align: center;
-  color: $color-white;
-}
-
-.academia-subtitle {
-  width: 85%;
-  margin-bottom: 0.5vw;
-  font-size: 1.2vw;
-}
-
-.box-container {
+.academia-box-container {
+  width: 90%;
+  height: 155vw;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
+  margin: 8vw 0 5vw;
 }
 
 .academia-box {
-  width: 30%;
-  margin: 3vw 0;
-  border-radius: 8px;
-  padding: 2vw;
-  background-color: rgba(0, 0, 0, 0.75);
+  width: 90%;
 }
 
-.academia-box-title {
-  font-size: 1.5vw;
-  font-weight: 600;
-  margin-bottom: 1vw;
+.logo-container {
+  width: 85%;
+  margin-bottom: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  & img {
+    width: 50vw;
+  }
+}
+
+.cmc-text {
+  width: 100%;
+}
+
+.mariano-box-container {
+  width: 90%;
+  margin: 3vw 0 5vw;
+  padding: 5vw;
+}
+
+.academia-subcontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.academia-subcontainer figure {
+  width: 100%;
+  overflow: hidden;
+}
+
+.mariano-image {
+  width: 100%;
+}
+
+.mariano-box {
+  width: 100%;
   text-align: center;
-  text-transform: uppercase;
-  color: $color-variation;
+  font-size: 3.1vw;
 }
 
-.academia-box-text {
+@media screen and (min-width: 1099px) {
+  .Academia {
+  }
+  .academia-box-container {
+    margin: 3vw 0;
+    height: auto;
+  }
+
+  .academia-box {
+    width: 65%;
+    margin-bottom: 3vw;
+  }
+
+  .logo-container {
+    width: 90%;
+    margin-top: 0;
+    border-radius: 100vw;
+    padding-right: 5vw;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6);
+    & img {
+      width: 15vw;
+    }
+  }
+
+  .cmc-text {
+    width: 75%;
+  }
+
+  .mariano-box-container {
+    width: 70%;
+    margin: 0;
+    padding: 3vw;
+    &:hover .mariano-image {
+      transform: scale(1.05);
+    }
+  }
+
+  .academia-subcontainer {
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: row;
+  }
+
+  .academia-subcontainer figure {
+    width: 23vw;
+  }
+
+  .mariano-image {
+    will-change: transform;
+    transition: 3s;
+  }
+
+  .mariano-box {
+    width: 40%;
+    text-align: left;
+    font-size: 1vw;
+  }
 }

@@ -1,9 +1,21 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./ParallaxImage.scss";
 
-const ParallaxImage = ({ image, alt, height, children }) => {
+const ParallaxImage = ({ image, alt, height, position, children }) => {
   const parallaxRef = useRef(null);
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth <= 768); // Se considera móvil si el ancho es <= 768px
+    };
+
+    checkScreenSize(); // Ejecutar la verificación al montar el componente
+    window.addEventListener("resize", checkScreenSize);
+
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
   useEffect(() => {
     const handleScroll = () => {
       if (parallaxRef.current) {
@@ -25,16 +37,37 @@ const ParallaxImage = ({ image, alt, height, children }) => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+  const imageUrl = () => {
+    return isMobile ? `url(${image})` : "none";
+  };
+  const imagePosition = () => {
+    if (alt === "academia") return "50% 0%";
+    if (alt === "franquicias") return "40% 41%";
+    return;
+  };
   return (
-    <div className="parallax-container" style={{ height: height }}>
-      <div
-        ref={parallaxRef}
-        className="parallax-image"
-        style={{ backgroundImage: `url(${image})` }}
-        role="img"
-        aria-label={alt}
-      ></div>
+    <div
+      className={`parallax-container ${
+        isMobile && "parallax-container__mobile"
+      }`}
+      style={{
+        height: height,
+        backgroundImage: imageUrl(),
+        backgroundPosition: imagePosition(),
+      }}
+    >
+      {!isMobile && (
+        <div
+          ref={parallaxRef}
+          className="parallax-image parallax-image__animated"
+          style={{
+            backgroundImage: `url(${image})`,
+            backgroundPosition: `${position}`,
+          }}
+          role="img"
+          aria-label={alt}
+        ></div>
+      )}
       {children}
     </div>
   );

@@ -1,7 +1,12 @@
 .parallax-container {
   position: relative;
   overflow: hidden;
+  padding-bottom: 15vw;
   width: 100%;
+  &__mobile {
+    background-size: 320%;
+    background-repeat: no-repeat;
+  }
 }
 
 .parallax-image {
@@ -9,9 +14,18 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 300%;
-  background-size: 120%;
-  background-position: center 70%; /* Comienza mostrando la parte inferior */
+  height: 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
   will-change: transform;
+}
+
+@media screen and (min-width: 1099px) {
+  .parallax-container {
+    padding-bottom: 8vw;
+  }
+  .parallax-image {
+    height: 300%;
+    background-size: 140%;
+  }
 }

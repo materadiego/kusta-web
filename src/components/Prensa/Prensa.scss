@@ -1,13 +1,240 @@
 .Prensa {
-  background-color: $color-primary;
-  position: relative;
-  padding: 5vw 0;
-  min-height: 100vw;
-  z-index: 2;
+  background-image: url("../../assets/sucursales-bg-2.jpg");
+  background-size: 130%;
+  background-color: $color-secondary;
 }
 
-.Prensa p {
+.prensa-bg-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1vw;
+  margin-bottom: 15vw;
+  width: 65%;
+  box-shadow: 0 0 25px -2px rgba(0, 0, 0, 0.4);
+  background-color: $color-white2;
+}
+
+.prensa-container {
+  width: 95%;
+  margin: 1vw auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.prensa-subcontainer {
+  width: 100%;
+  overflow: hidden;
+}
+
+.arrow-icon-container {
+  width: 15vw;
+  height: 15vw;
+  position: absolute;
+  &__left {
+    left: -17vw;
+  }
+  &__right {
+    right: -17vw;
+    transform: rotateZ(180deg);
+  }
+  &__active {
+    opacity: 1;
+  }
+  &__inactive {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+  & img {
+    width: 100%;
+  }
+}
+
+.prensa-box-wrapper {
+  display: flex;
+  transition: 1s;
+  will-change: margin;
+  &__page1 {
+    margin-left: 0;
+  }
+
+  &__page2 {
+    margin-left: -100%;
+  }
+  &__page3 {
+    margin-left: -200%;
+  }
+  &__page4 {
+    margin-left: -300%;
+  }
+  &__page5 {
+    margin-left: -400%;
+  }
+  &__page6 {
+    margin-left: -500%;
+  }
+  &__page7 {
+    margin-left: -600%;
+  }
+  &__page8 {
+    margin-left: -700%;
+  }
+  &__page9 {
+    margin-left: -800%;
+  }
+  &__page10 {
+    margin-left: -900%;
+  }
+  &__page11 {
+    margin-left: -1000%;
+  }
+  &__page12 {
+    margin-left: -1100%;
+  }
+  &__page13 {
+    margin-left: -1200%;
+  }
+  &__page14 {
+    margin-left: -1300%;
+  }
+
+  &__notas {
+    width: 1400%;
+  }
+}
+
+.prensa-box-container {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.prensa-box {
+  width: 95%;
+  border-radius: 6px;
+  margin: 5vw auto;
+  overflow: hidden;
+
+  background-color: $color-white;
+}
+
+.prensa-box-image-container {
+  width: 100%;
+  height: 38vw;
+  overflow: hidden;
+  & img {
+    width: 100%;
+    transition: 3s;
+    will-change: transform;
+  }
+}
+
+.prensa-box-title {
+  width: 100%;
+  padding: 3vw 0;
+  margin: 0 auto;
   text-align: center;
-  font-size: 1.2vw;
+  transition: 0.3s;
+  will-change: color;
+  font-size: 3.5vw;
+  background-color: $color-secondary;
   color: $color-white;
+}
+
+@media screen and (min-width: 1099px) {
+  .Prensa {
+  }
+
+  .prensa-bg-container {
+    border-radius: 1vw;
+    width: 100%;
+    margin-bottom: 5vw;
+  }
+
+  .prensa-container {
+    margin: 3vw 0 4vw;
+    width: 100%;
+  }
+
+  .arrow-icon-container {
+    width: 4vw;
+    height: 4vw;
+    transition: 0.3s;
+    will-change: opacity;
+    &__left {
+      left: -4.5vw;
+    }
+    &__right {
+      right: -4.5vw;
+    }
+    &__active {
+      opacity: 0.8;
+      cursor: pointer;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .prensa-box-wrapper {
+    &__page1 {
+      margin-left: 0;
+    }
+
+    &__page2 {
+      margin-left: -100%;
+    }
+    &__page3 {
+      margin-left: -200;
+    }
+    &__page4 {
+      margin-left: -300%;
+    }
+    &__page5 {
+      margin-left: -366.66%;
+    }
+    &__notas {
+      width: 466.66%;
+    }
+  }
+
+  .prensa-box-container {
+    width: 33.33%;
+  }
+
+  .prensa-box {
+    width: 80%;
+    margin: 0;
+    cursor: pointer;
+    &:hover .prensa-box-image-container img {
+      transform: scale(1.05);
+    }
+    &:hover .prensa-box-title {
+      color: $color-variation;
+    }
+  }
+
+  .prensa-box-image-container {
+    width: 100%;
+    height: 12.5vw;
+    overflow: hidden;
+    & img {
+      width: 100%;
+      transition: 3s;
+      will-change: transform;
+    }
+  }
+
+  .prensa-box-title {
+    width: 100%;
+    font-size: 1vw;
+    padding: 1vw 0;
+    margin: 0 auto;
+    text-align: center;
+    transition: 0.3s;
+    will-change: color;
+    color: $color-white;
+  }
 }

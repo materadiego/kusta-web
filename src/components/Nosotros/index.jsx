@@ -3,25 +3,25 @@ import LayoutContainer from "../LayoutContainer";
 
 const Nosotros = forwardRef((props, ref) => {
   return (
-    <div className="Nosotros" ref={ref}>
-      <div className="nosotros-overlay"></div>
+    <div className="Section Nosotros " ref={ref}>
+      <div className="Overlay Overlay__black"></div>
       <LayoutContainer>
         <h3>Nosotros</h3>
-        <p className="nosotros-subtitle">
+        <p className="Subtitle Subtitle__white">
           Küsta Barber Truck es la primera barbería y peluquería móvil del país.
         </p>
-        <div className="nosotros-box-container">
-          <div className="nosotros-box">
-            <p className="nosotros-box-title">INNOVACIÓN</p>
-            <p className="nosotros-box-text">
+        <div className="BoxContainer SectionContainer">
+          <div className="Box Box__border nosotros-box">
+            <p className="BoxTitle ">INNOVACIÓN</p>
+            <p className="BoxText">
               Se trata de un formato disruptivo, innovador y único en el mercado
               que nace como respuesta a la necesidad creciente de hombres de
               cuidar su imagen y a la vez, optimizar su tiempo.
             </p>
           </div>
-          <div className="nosotros-box">
-            <p className="nosotros-box-title">COMPROMISO</p>
-            <p className="nosotros-box-text">
+          <div className="Box Box__border nosotros-box">
+            <p className="BoxTitle">COMPROMISO</p>
+            <p className="BoxText">
               En un ambiente cómodo, moderno, ameno y cálido, Küsta brinda un
               servicio ágil, de calidad y excelencia. Cuenta con un staff de
               profesionales altamente capacitados, que son formados de manera

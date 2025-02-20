@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import Navbar from "../components/Navbar";
 
 import Academia from "../components/Academia";
@@ -9,55 +9,55 @@ import Servicios from "../components/Servicios";
 import Sucursales from "../components/Sucursales";
 import Prensa from "../components/Prensa";
 import Franquicias from "../components/Franquicias";
+import Modal from "../components/Modal";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
-  const heroRef = useRef(null); // Referencia al componente "Hero"
-  const nosotrosRef = useRef(null); // Referencia al componente "Nosotros"
-  const lastScrollPosition = useRef(0); // Última posición del scroll
-  const [isTransitioning, setIsTransitioning] = useState(false); // Control de transición
+  const heroRef = useRef(null);
+  const nosotrosRef = useRef(null);
+  const serviciosRef = useRef(null);
+  const academiaRef = useRef(null);
+  const beneficiosRef = useRef(null);
+  const sucursalesRef = useRef(null);
+  const franquiciasRef = useRef(null);
+  const prensaRef = useRef(null);
 
+  const [activeSection, setActiveSection] = useState("hero");
+  const [openModal, setOpenModal] = useState(false);
+  const [modalInfo, setModalInfo] = useState({});
+
+  const scrollToSection = (ref) => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const openModalInfo = (type, info) => {
+    setOpenModal(true);
+    setModalInfo({ type: type, info: info });
+  };
+
+  const sectionRefs = {
+    hero: heroRef,
+    nosotros: nosotrosRef,
+    servicios: serviciosRef,
+    academia: academiaRef,
+    beneficios: beneficiosRef,
+    sucursales: sucursalesRef,
+    franquicias: franquiciasRef,
+    prensa: prensaRef,
+  };
   useEffect(() => {
     const handleScroll = () => {
-      if (isTransitioning) return; // Evitar scroll durante transición
+      const sectionKeys = Object.keys(sectionRefs);
+      for (let i = 0; i < sectionKeys.length; i++) {
+        const key = sectionKeys[i];
+        const ref = sectionRefs[key];
+        if (!ref.current) continue;
 
-      const currentScroll = window.scrollY;
-      const viewportHeight = window.innerHeight;
-      const scrollDirection =
-        currentScroll > lastScrollPosition.current ? "down" : "up";
-      lastScrollPosition.current = currentScroll;
-
-      // Detectar scroll hacia abajo (desde Hero a Nosotros)
-      if (
-        scrollDirection === "down" &&
-        currentScroll > viewportHeight * 0.01 && // Umbral del 30% de la pantalla
-        currentScroll < viewportHeight * 0.9
-      ) {
-        setIsTransitioning(true); // Iniciar transición
-        window.scrollTo({
-          top: nosotrosRef.current.offsetTop,
-          behavior: "smooth",
-        });
-
-        setTimeout(() => {
-          setIsTransitioning(false); // Fin de la transición
-        }, 500); // Duración de la transición
-      }
-
-      // Detectar scroll hacia arriba (desde Nosotros a Hero)
-      if (
-        scrollDirection === "up" &&
-        currentScroll < viewportHeight * 0.99 && // Umbral del 70% de la pantalla
-        currentScroll > viewportHeight * 0.1
-      ) {
-        setIsTransitioning(true); // Iniciar transición
-        window.scrollTo({
-          top: heroRef.current.offsetTop,
-          behavior: "smooth",
-        });
-
-        setTimeout(() => {
-          setIsTransitioning(false); // Fin de la transición
-        }, 500); // Duración de la transición
+        const { top, bottom } = ref.current.getBoundingClientRect();
+        if (top <= window.innerHeight / 2 && bottom > window.innerHeight / 2) {
+          setActiveSection(key);
+          break;
+        }
       }
     };
 
@@ -66,26 +66,42 @@ const HomePage = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isTransitioning]);
+  }, [sectionRefs]);
 
   return (
     <div className="HomePage">
-      <Navbar heroRef={heroRef} />
+      <Navbar
+        scrollToSection={scrollToSection}
+        sections={sectionRefs}
+        activeSection={activeSection}
+        heroRef={heroRef}
+      />
       <section ref={heroRef} style={{ height: "100vh", background: "#282c34" }}>
-        <Hero />
+        <Hero scrollToSection={scrollToSection} sections={sectionRefs} />
       </section>
-      <section
-        ref={nosotrosRef}
-        style={{ height: "100vh", background: "#f4f4f4" }}
-      >
+      <section ref={nosotrosRef} style={{ background: "#f4f4f4" }}>
         <Nosotros />
       </section>
-      <Servicios />
-      <Academia />
-      <Beneficios />
-      <Sucursales />
-      <Franquicias />
-      <Prensa />
+      <section ref={serviciosRef}>
+        <Servicios />
+      </section>
+      <section ref={academiaRef}>
+        <Academia />
+      </section>
+      <section ref={beneficiosRef}>
+        <Beneficios />
+      </section>
+      <section ref={sucursalesRef}>
+        <Sucursales openLocation={openModalInfo} />
+      </section>
+      <section ref={franquiciasRef}>
+        <Franquicias />
+      </section>
+      <section ref={prensaRef}>
+        <Prensa openImage={openModalInfo} />
+      </section>
+      <Footer />
+      {openModal && <Modal modalInfo={modalInfo} setOpenModal={setOpenModal} />}
     </div>
   );
 };

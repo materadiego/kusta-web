@@ -1,65 +1,323 @@
 .Servicios {
-  padding: 0 0 5vw;
-  background-color: $color-white;
-  position: relative;
-  z-index: 1;
-  background-image: url(../../assets/services-bg6.jpg);
-  background-size: 110%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+  &__Services {
+    background-color: $color-white3;
+  }
+  &__Wonoma {
+    background-image: url(../../assets/wonoma-bg.png);
+    background-size: 340%;
+    transition: 4s linear;
+    will-change: background-position;
 
-.services-overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  z-index: 2;
-  background-color: rgba(255, 255, 255, 0.7);
+    background-position: 20% center;
+
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .services-container {
-  margin-top: 3vw;
+  width: 90%;
   display: flex;
   justify-content: space-evenly;
 }
 
 .services-subcontainer {
-  width: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.services-box {
+  width: 100%;
+  height: 50vw;
+  margin: 0 0 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-decoration: none;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 3s ease-out;
+  will-change: background-size;
+  background-color: $color-secondary;
+  &__1 {
+    background-image: url("../../assets/services3.JPG");
+    background-position: center 35%;
+  }
+  &__2 {
+    background-image: url("../../assets/services2.jpg");
+    background-position: center 50%;
+  }
+  &__3 {
+    background-image: url("../../assets/services3.png");
+    background-position: center 30%;
+  }
+}
+
+.services-box-content {
+  width: 85%;
+  height: 80%;
+  margin: 0;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  will-change: color;
+  border: 2px solid $color-variation;
+  color: $color-variation;
+}
+
+.wonoma-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.services-description {
+.wonoma-image-container {
   width: 100%;
-  margin: 0 0 1vw;
-  font-size: 1.05vw;
+  height: 100vw;
 }
 
-.services-image-container {
-  width: 77.1%;
-  margin-left: 6vw;
-}
-
-.services-image {
+.wonoma-image-subcontainer {
   width: 100%;
+  height: 100vw;
+  z-index: 2;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/wonoma-img.png");
+  background-size: 100%;
+  background-position: center 56%;
+  box-shadow: inset 0 0 85px 0 rgba(0, 0, 0, 0.5);
+  background-color: $color-variation-dark;
 }
 
-.services-list {
-  list-style: none;
-  padding: 1.5vw 2vw;
-  background-color: $color-primary;
-  background-color: rgba(0, 0, 0, 0.85);
-}
-
-.services-item {
-  margin: 0.7vw 0;
-  font-size: 1.2vw;
+.wonoma-content-container {
+  width: 100%;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.wonoma-content {
+  width: 90%;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.wonoma-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3vw;
+  margin: 0 0 5vw;
   color: $color-white;
+}
+
+.wonoma-logo-container {
+  width: 60%;
+  margin: 15vw auto 2vw;
   & img {
-    width: 2vw;
-    margin-right: 1vw;
+    width: 100%;
+  }
+}
+
+.wonoma-box-container {
+  width: 90%;
+  margin: 3vw auto 4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wonoma-box {
+  width: 100%;
+  margin-bottom: 4vw;
+  padding: 10vw 0;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.icon-container {
+  width: 20vw;
+  height: 20vw;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  &__1 {
+    background-image: url("../../assets/icon-clock-gray.svg");
+    background-size: 90%;
+  }
+  &__2 {
+    background-image: url("../../assets/icon-check-gray.svg");
+    background-size: 70%;
+  }
+  &__3 {
+    background-image: url("../../assets/icon-offer-gray.svg");
+    background-size: 107%;
+  }
+}
+
+.wonoma-box-title {
+  margin: 3vw 0 5vw;
+  font-family: "Merriweather", sans-serif;
+  font-size: 5.5vw;
+  text-align: center;
+  text-transform: uppercase;
+  width: 70%;
+  color: $color-variation;
+}
+
+.wonoma-box-text {
+  font-size: 3.5vw;
+  width: 70%;
+  text-align: center;
+
+  color: $color-font-gray;
+}
+
+.wonoma-content a {
+  margin: 0 auto 10vw;
+  padding: 2vw 5vw;
+  border-radius: 4px;
+  font-size: 4vw;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: none;
+  background: transparent;
+  border: 2px solid $color-white;
+  color: $color-white;
+}
+
+@media screen and (min-width: 1099px) {
+  .Servicios {
+    &__Wonoma {
+      background-image: url(../../assets/wonoma-bg.png);
+      background-size: 50%;
+      background-position: right 12.5%;
+    }
+  }
+
+  .services-container {
+    width: 100%;
+  }
+
+  .services-subcontainer {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .services-box {
+    width: 31%;
+    height: 15vw;
+    cursor: pointer;
+    &:hover {
+      background-size: 120%;
+      & .services-box-content {
+        color: $color-white;
+      }
+    }
+  }
+
+  .wonoma-container {
+    flex-direction: row;
+    height: 50vw;
+    &:hover .wonoma-image-subcontainer {
+      background-size: 106%;
+    }
+  }
+
+  .wonoma-image-container {
+    width: 50%;
+    height: 50vw;
+  }
+
+  .wonoma-image-subcontainer {
+    height: 50vw;
+    transition: 5s linear;
+    will-change: background-size;
+  }
+
+  .wonoma-content-container {
+    width: 50%;
+    padding-top: 5vw;
+  }
+
+  .wonoma-content {
+    width: 85%;
+  }
+
+  .wonoma-title {
+    font-size: 1.3vw;
+  }
+
+  .wonoma-logo-container {
+    width: 15vw;
+    margin: 0 auto 1vw;
+  }
+
+  .wonoma-box-container {
+    width: 100%;
+    margin: 3vw 0 4vw;
+    flex-direction: row;
+    align-items: normal;
+  }
+
+  .wonoma-box {
+    width: 32%;
+    margin-bottom: 0;
+    padding: 1.5vw 0;
+  }
+
+  .icon-container {
+    width: 4vw;
+    height: 4vw;
+    margin: 0;
+    &__1 {
+      background-size: 95%;
+    }
+    &__2 {
+      background-size: 70%;
+    }
+    &__3 {
+      background-size: 107%;
+    }
+  }
+
+  .wonoma-box-title {
+    margin: 1vw 0;
+    font-size: 1.2vw;
+    width: 88%;
+  }
+
+  .wonoma-box-text {
+    font-size: 0.85vw;
+    width: 85%;
+  }
+
+  .wonoma-content a {
+    padding: 0.5vw 2.5vw;
+    font-size: 1.2vw;
+    transition: 0.3s;
+    will-change: opacity;
+
+    &:hover {
+      color: $color-variation-dark;
+      background: $color-white;
+      border: 2px solid $color-white;
+    }
   }
 }

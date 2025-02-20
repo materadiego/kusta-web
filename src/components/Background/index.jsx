@@ -1,9 +1,5 @@
 const Background = ({ url }) => {
-  return (
-    <div className="BackgroundContainer">
-      <img src={require("../../assets/1.jpg")} alt="background" />
-    </div>
-  );
+  return <div className="BackgroundContainer"></div>;
 };
 
 export default Background;

@@ -1,42 +1,130 @@
 .Navbar {
+  width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   position: fixed;
   z-index: 10;
   top: 0;
-  width: 100%;
-  padding-top: 4vw;
   background: rgb(0, 0, 0);
+}
+
+.navbarBigHeight {
+  height: 20vw;
+}
+
+.navbarSmallHeight {
+  height: 15vw;
 }
 
 .navbar-menu-icon {
   width: 8vw;
   position: absolute;
-  left: 10%;
-  top: 7vw;
+  z-index: 10;
+  left: 6%;
+  top: 3vw;
   color: $color-white;
 }
 
 .navbar-logo-container {
-  width: 40vw;
+  transition: 0.3s;
+  will-change: width transform;
+  position: relative;
+  z-index: 10;
+
   & img {
     width: 100%;
   }
 }
+.logoWidthMenu {
+  transform: translateY(30vw);
+  width: 70vw;
+}
+
+.logoWidthBig {
+  transform: translateY(0vw);
+
+  width: 30vw;
+}
+
+.logoWidthSmall {
+  width: 18vw;
+  transform: translateY(0vw);
+}
 
 .navbar-menu-container {
-  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  z-index: 9;
+  transition: 0.3s;
+  will-change: opacity;
+  background-color: $color-secondary;
+  &__open {
+    opacity: 1;
+  }
+  &__close {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.navbar-menu-list {
+  padding-top: 53vw;
+  list-style: none;
+  margin: 0 auto;
 }
 
+.navbar-menu-links {
+  font-size: 6vw;
+  margin: 3vw 0;
+  text-align: center;
+  color: $color-white;
+}
 .navbar-media-container {
-  display: none;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 11;
+  bottom: 10vw;
+  left: 27.5%;
+  right: 27.5%;
+  width: 45%;
 }
 
+.navbar-media-links {
+  width: 10vw;
+  height: 10vw;
+}
+
+.media-image {
+  filter: brightness(200%) grayscale(100%);
+}
+
+.media-ig {
+  width: 100%;
+}
+.media-in {
+  width: 85%;
+}
+.media-fb {
+  width: 85%;
+  margin-left: -2vw;
+}
 @media screen and (min-width: 1099px) {
   .Navbar {
+    align-items: center;
     justify-content: flex-start;
     padding-top: 0;
+  }
+
+  .navbarBigHeight {
+    height: 5vw;
+  }
+
+  .navbarSmallHeight {
+    height: 3vw;
   }
 
   .navbar-menu-icon {
@@ -44,44 +132,75 @@
   }
 
   .navbar-logo-container {
-    width: 8vw;
+    cursor: pointer;
     margin-left: 1vw;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .navbar-menu-container {
-    display: flex;
-
-    width: 45%;
-    margin: -0.5vw 0 0 3.3vw;
+  .logoWidthMenu {
+    transform: translateY(0);
+    width: 8vw;
   }
-  .navbar-menu-list {
-    list-style: none;
+
+  .logoWidthBig {
+    width: 8vw;
+  }
+
+  .logoWidthSmall {
+    width: 5vw;
+  }
+
+  .navbar-menu-container {
+    width: 89%;
+    height: auto;
+    margin: 0 1% 0 auto;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    position: relative;
+
+    opacity: 1;
+    background-color: transparent;
+    &__close {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+  .navbar-menu-list {
+    padding: 0;
+    margin: 0 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
   }
 
   .navbar-menu-links {
+    margin: 0;
     font-size: 0.9vw;
     transition: 0.3s;
     will-change: color;
     cursor: pointer;
-    color: $color-white;
+
     &:hover {
+      color: $color-variation;
+    }
+    &__inactive {
+      color: $color-white;
+    }
+    &__active {
       color: $color-variation;
     }
   }
 
   .navbar-media-container {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    right: 2.5vw;
+    position: relative;
+    right: 0;
+
+    left: auto;
+    bottom: auto;
     width: 9vw;
-    margin-top: -1vw;
   }
 
   .navbar-media-links {
@@ -90,14 +209,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0.9;
-    will-change: opacity;
+    opacity: 1;
+    will-change: opacity background-color;
+    border-radius: 100vw;
     transition: 0.3s;
+    background-color: $color-primary;
     &:hover {
+      background-color: $color-terciary;
       opacity: 1;
     }
-    & img {
-      width: 60%;
+    &:hover .media-image {
+      filter: none;
     }
+  }
+
+  .media-image {
+    filter: brightness(200%) grayscale(100%);
+    transition: filter 0.3s ease;
+    margin: 0;
+  }
+
+  .media-ig {
+    width: 60%;
+  }
+  .media-in {
+    width: 45%;
+  }
+  .media-fb {
+    width: 50%;
   }
 }
