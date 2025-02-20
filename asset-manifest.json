@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kusta-web/static/css/main.bf8808e5.css",
-    "main.js": "/kusta-web/static/js/main.63d7254f.js",
+    "main.css": "/kusta-web/static/css/main.e54cfd0a.css",
+    "main.js": "/kusta-web/static/js/main.99fed2dc.js",
     "static/js/453.f1bc1648.chunk.js": "/kusta-web/static/js/453.f1bc1648.chunk.js",
     "static/media/franquicias-bg3.jpg": "/kusta-web/static/media/franquicias-bg3.1d7259b38fedead28000.jpg",
     "static/media/services2.jpg": "/kusta-web/static/media/services2.d6281cc8322f876785f9.jpg",
@@ -37,6 +37,7 @@
     "static/media/prensa-sinmordaza.png": "/kusta-web/static/media/prensa-sinmordaza.8a38e42bd881810e902e.png",
     "static/media/logo-shell.png": "/kusta-web/static/media/logo-shell.ad096efdc09ce07d32c5.png",
     "static/media/beneficios-bg.svg": "/kusta-web/static/media/beneficios-bg.aa341d7a5faeddc0afcd.svg",
+    "static/media/2.jpg": "/kusta-web/static/media/2.e85fdb104ee805dd4bd4.jpg",
     "static/media/logo-swiss.png": "/kusta-web/static/media/logo-swiss.a044442d60ecbd16db3f.png",
     "static/media/logo-wonoma.png": "/kusta-web/static/media/logo-wonoma.22240679118b768c7e9e.png",
     "static/media/logo-medife.png": "/kusta-web/static/media/logo-medife.6966c78c10c2863365cd.png",
@@ -56,12 +57,12 @@
     "static/media/icon-check-gray.svg": "/kusta-web/static/media/icon-check-gray.14f24e1b4b2d824929d7.svg",
     "static/media/location-icon.svg": "/kusta-web/static/media/location-icon.8616fd08091d107c17c7e263cd4547f7.svg",
     "static/media/arrow-icon.svg": "/kusta-web/static/media/arrow-icon.8f8e7ddc0adcab9b85523e694e3b4de5.svg",
-    "main.bf8808e5.css.map": "/kusta-web/static/css/main.bf8808e5.css.map",
-    "main.63d7254f.js.map": "/kusta-web/static/js/main.63d7254f.js.map",
+    "main.e54cfd0a.css.map": "/kusta-web/static/css/main.e54cfd0a.css.map",
+    "main.99fed2dc.js.map": "/kusta-web/static/js/main.99fed2dc.js.map",
     "453.f1bc1648.chunk.js.map": "/kusta-web/static/js/453.f1bc1648.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf8808e5.css",
-    "static/js/main.63d7254f.js"
+    "static/css/main.e54cfd0a.css",
+    "static/js/main.99fed2dc.js"
   ]
 }
