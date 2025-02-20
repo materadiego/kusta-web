@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kusta-web/static/css/main.466d2fbb.css",
-    "main.js": "/kusta-web/static/js/main.99fed2dc.js",
+    "main.css": "/kusta-web/static/css/main.7ee9b11d.css",
+    "main.js": "/kusta-web/static/js/main.fc9e9abf.js",
     "static/js/453.f1bc1648.chunk.js": "/kusta-web/static/js/453.f1bc1648.chunk.js",
     "static/media/franquicias-bg3.jpg": "/kusta-web/static/media/franquicias-bg3.1d7259b38fedead28000.jpg",
     "static/media/services2.jpg": "/kusta-web/static/media/services2.d6281cc8322f876785f9.jpg",
@@ -57,12 +57,12 @@
     "static/media/icon-check-gray.svg": "/kusta-web/static/media/icon-check-gray.14f24e1b4b2d824929d7.svg",
     "static/media/location-icon.svg": "/kusta-web/static/media/location-icon.8616fd08091d107c17c7e263cd4547f7.svg",
     "static/media/arrow-icon.svg": "/kusta-web/static/media/arrow-icon.8f8e7ddc0adcab9b85523e694e3b4de5.svg",
-    "main.466d2fbb.css.map": "/kusta-web/static/css/main.466d2fbb.css.map",
-    "main.99fed2dc.js.map": "/kusta-web/static/js/main.99fed2dc.js.map",
+    "main.7ee9b11d.css.map": "/kusta-web/static/css/main.7ee9b11d.css.map",
+    "main.fc9e9abf.js.map": "/kusta-web/static/js/main.fc9e9abf.js.map",
     "453.f1bc1648.chunk.js.map": "/kusta-web/static/js/453.f1bc1648.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.466d2fbb.css",
-    "static/js/main.99fed2dc.js"
+    "static/css/main.7ee9b11d.css",
+    "static/js/main.fc9e9abf.js"
   ]
 }
